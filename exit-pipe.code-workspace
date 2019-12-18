@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.DS_Store": true,
+			"**/.git": true,
+			"**/.vscode": true,
+			"**/.tox": true,
+			"**/.pytest_cache": true,
+			"**/.coverage": true,
+			"**/coverage.xml": true,
+			"**/__pycache__": true,
+			"**/*.egg-info": true
+		},
+		"python.venvPath": "${workspaceFolder}/.tox",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.linting.pylintArgs": [
+			"--rcfile", "${workspaceFolder}/.pylintrc",
+			"--disable", "R,missing-module-docstring,missing-class-docstring,missing-function-docstring"
+		],
+		"python.testing.pytestEnabled": true,
+		"python.testing.pytestArgs": ["tests"],
+		"[python]": {
+			"files.trimTrailingWhitespace": true,
+			"files.insertFinalNewline": true,
+			"editor.renderFinalNewline": false
+		},
+	}
+}
